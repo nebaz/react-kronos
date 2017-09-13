@@ -1,6 +1,6 @@
 {
-  "name": "react-kronos",
-  "version": "1.6.0",
+  "name": "@nebaz/react-kronos",
+  "version": "1.6.1",
   "description": "A fast, intuitive, and elegant date and time picker for React.",
   "main": "dist/bundle.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dubert/react-kronos"
+    "url": "https://github.com/nebaz/react-kronos"
   },
   "keywords": [
     "react",
@@ -36,14 +36,14 @@
   "author": "Luke Dubert <dubert@me.com> (http://github.com/dubert)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dubert/react-kronos/issues"
+    "url": "https://github.com/nebaz/react-kronos/issues"
   },
   "homepage": "http://dubert.github.io/react-kronos",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^6.2.4",
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
