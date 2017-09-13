@@ -20,11 +20,6 @@ function initializeMoment(options) {
     if (options.locale.settings) {
       Moment.updateLocale(lang, options.locale.settings)
     }
-  } else {
-    Moment.updateLocale(lang, {
-      week: { dow: 1 },
-      weekdaysMin: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-    })
   }
 
   _moment = true

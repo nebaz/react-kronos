@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 
 import get from 'lodash/get'
+import range from 'lodash/range'
 
 import Moment from 'moment'
 import 'moment-range'
@@ -125,6 +126,17 @@ class Calendar extends Component {
     }
   }
 
+  getWeekdaysMin() {
+    const offset = Moment().localeData().firstDayOfWeek();
+    const weekdaysMin = Moment.weekdaysMin();
+
+    range(offset).forEach(() => {
+      const firstDay = weekdaysMin.shift();
+      weekdaysMin.push(firstDay);
+    });
+    return weekdaysMin;
+  }
+
   getCells(unit, datetime) {
     datetime = datetime || Moment()
 
@@ -171,7 +183,7 @@ class Calendar extends Component {
         let days = []
         const format = get(this.props, 'options.format.day') || 'D'
 
-        Moment.weekdaysMin().forEach(day => {
+        this.getWeekdaysMin().forEach(day => {
           days.push({
             label: day,
             header: true,
