@@ -1,5 +1,19 @@
 Changelog
 =========
+## 1.6.3
+
+- changelog and bundles are updated
+
+## 1.6.2
+
+- [bug] removed parameters, that broke the Moment.js
+- [bug] function getWeekDays fixed
+
+## 1.6.1
+  - add `calendarIcon` prop - button-icon to native toggle the calendar
+    - add `className` prop - class name for button
+    - add `onClick` prop - handle click on the button
+- add `mainBlockClassName` prop
 
 ## 1.6.0
 
